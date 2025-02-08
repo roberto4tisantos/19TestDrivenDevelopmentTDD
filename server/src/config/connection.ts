@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODB_URI || '';
 const db = async (): Promise<typeof mongoose.connection> => {
   try {
     await mongoose.connect(MONGODB_URI);
-    console.log('Database connected.');
+    console.log('NoSQLBoster for MongoDB Database OKAY!.');
     return mongoose.connection;
   } catch (error) {
     console.error('Database connection error:', error);
