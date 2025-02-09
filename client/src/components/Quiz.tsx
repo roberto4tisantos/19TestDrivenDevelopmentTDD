@@ -7,7 +7,7 @@ const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
-  const [quizStarted, setQuizStarted] = useState(true); //useState(false);
+  const [quizStarted, setQuizStarted] = useState(false);
 
   const getRandomQuestions = async () => {
     try {
