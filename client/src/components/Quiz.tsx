@@ -1,13 +1,13 @@
 import { useState, } from 'react';
-import type { Question } from '../models/Question.js';
-import { getQuestions } from '../services/questionApi.js';
+import type { Question } from '../models/Question.tsx';
+import { getQuestions } from '../services/questionApi.tsx';
 
 const Quiz = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
-  const [quizStarted, setQuizStarted] = useState(false);
+  const [quizStarted, setQuizStarted] = useState(true); //useState(false);
 
   const getRandomQuestions = async () => {
     try {

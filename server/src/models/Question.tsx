@@ -21,4 +21,5 @@ const QuestionSchema = new Schema<IQuestion>({
 });
 
 const Question = model<IQuestion>('Question', QuestionSchema);
+
 export { IQuestion, Question };

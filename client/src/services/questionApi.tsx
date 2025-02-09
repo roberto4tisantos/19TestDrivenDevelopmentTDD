@@ -1,4 +1,4 @@
-import type { Question } from '../models/Question.js';
+import type { Question } from '../models/Question.tsx';
 
 export const getQuestions = async (): Promise<Question[]> => {
   try {
@@ -9,7 +9,7 @@ export const getQuestions = async (): Promise<Question[]> => {
     const data: Question[] = await response.json();
     return data;
   } catch (error) {
-    console.error('Failed to fetch questions:', error);
+      console.error('Failed to fetch questions:', error);
     throw error;
   }
 };

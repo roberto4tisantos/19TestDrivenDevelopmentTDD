@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
 
+    "jsx": "react", // or "react-jsx" for React 17+
     "resolveJsonModule": true,
 
     /* Language and Environment */
