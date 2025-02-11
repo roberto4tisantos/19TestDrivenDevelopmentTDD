@@ -31,8 +31,9 @@
     "noImplicitOverride": true /* Ensure overriding members in derived classes are marked with an override modifier. */,
     "useUnknownInCatchVariables": true /* Ensure 'unknown' is used for catch clause variables. */,
 
-    "types": ["node", "express"]
+    "types": ["node", "express", "cypress", "@testing-library/cypress"]
   },
+  "include": ["**/*.ts"],
   "files": [],
   "references": [
     {
