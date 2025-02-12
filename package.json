@@ -16,12 +16,13 @@
     "render-build": "npm install && npm run build",
     "cypress": "cypress open",
     "test": "npx cypress run --browser electron --headless",
-    "test-gui": "npx cypress open --detached"    
+    "test-gui": "npx cypress open --detached"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@testing-library/cypress": "^10.0.3",
     "@types/dotenv": "^6.1.1",
     "@types/express": "^5.0.0",
     "@types/mongoose": "^5.11.96",
